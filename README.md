@@ -37,7 +37,7 @@ A diferencia de un RAG tradicional que siempre recupera documentos del mismo lug
 |---|---|
 | Orquestación del agente | LangGraph |
 | LLM | OpenAI GPT-4o-mini |
-| Embeddings | Google Generative AI |
+| Embeddings | OPEN AI |
 | Base de datos vectorial | ChromaDB |
 | Búsqueda web | Tavily |
 | Backend API | FastAPI |
@@ -195,7 +195,7 @@ Pregunta del usuario
 Este proyecto está basado en:
 > [Building an Adaptive RAG System with LangGraph, OpenAI, and Tavily](https://levelup.gitconnected.com/building-an-adaptive-rag-system-with-langgraph-openai-and-tavily-c4ee39d2f021)
 
-El notebook original del artículo está disponible en [`notebooks/adaptive_rag.ipynb`](notebooks/adaptive_rag.ipynb).
+El notebook original del artículo está disponible en [`notebooks/RAG.ipynb`](notebooks/RAG.ipynb).
 
 ## Recursos relacionados
 
