@@ -1,24 +1,44 @@
-# Entorno virtual
+# ── Entorno virtual ───────────────────────────────
 .venv/
-env/
 venv/
+env/
+__pypackages__/
 
-# Variables de entorno
+# ── Variables de entorno ─────────
 .env
 
-# Python
+# ── Python ───────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.egg-info/
 dist/
 build/
+.eggs/
+*.egg
 
-# ChromaDB
+# ── uv ───────────────────────────────────────────
+uv.lock
+
+# ── ChromaDB ───────────────
 chroma_db/
 .chroma/
 
-# Jupyter
+# ── Jupyter ───────────────────────────────────────
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# VS Code
+# ── VS Code ───────────────────────────────────────
 .vscode/
+*.code-workspace
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────
+*.log
+logs/
+
+# ── Chainlit ──────────────────────────────────────
+.chainlit/
+chainlit.db
