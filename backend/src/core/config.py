@@ -15,7 +15,7 @@ class Settings(BaseSettings):
 
     # Model settings
     openai_model: str = "gpt-4o-mini"
-    embedding_model: str = "models/embedding-001"
+    embedding_model: str = "text-embedding-ada-002"
 
     # Vectorstore
     collection_name: str = "adaptive_rag_docs"

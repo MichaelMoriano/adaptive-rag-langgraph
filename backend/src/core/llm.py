@@ -1,6 +1,6 @@
 from functools import lru_cache
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from src.core.config import settings
 
@@ -16,11 +16,10 @@ def get_llm() -> ChatOpenAI:
 
 
 @lru_cache(maxsize=1)
-def get_embeddings() -> GoogleGenerativeAIEmbeddings:
-    """Singleton embeddings instance."""
-    return GoogleGenerativeAIEmbeddings(
+def get_embeddings() -> OpenAIEmbeddings:
+    return OpenAIEmbeddings(
         model=settings.embedding_model,
-        google_api_key=settings.google_api_key,
+        api_key=settings.openai_api_key,
     )
 
 
