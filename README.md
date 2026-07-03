@@ -2,8 +2,6 @@
 
 Sistema de **Retrieval-Augmented Generation Adaptativo** construido con LangGraph, OpenAI, Google GenAI y Tavily. El agente decide dinámicamente si responder con documentos indexados o realizar una búsqueda web en tiempo real.
 
-![LangGraph Flow](langgraph-flow.png)
-
 ## ¿Qué hace este sistema?
 
 A diferencia de un RAG tradicional que siempre recupera documentos del mismo lugar, este sistema **adapta su estrategia** según la pregunta:
@@ -87,7 +85,7 @@ adaptive-rag-langgraph/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/adaptive-rag-langgraph.git
+git clone https://github.com/MichaelMoriano/adaptive-rag-langgraph
 cd adaptive-rag-langgraph
 ```
 
