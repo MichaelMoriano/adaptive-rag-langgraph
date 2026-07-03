@@ -12,6 +12,9 @@
 
 ```bash
 cd backend
+uv venv
+source .venv/Scripts/activate   # Windows
+# source .venv/bin/activate     # Mac/Linux
 uv pip install -e .
 uvicorn src.main:app --reload --port 8000
 ```

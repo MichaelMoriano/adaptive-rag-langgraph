@@ -15,6 +15,7 @@ async def ask_question(request: QuestionRequest):
             "generation": "",
             "web_search_needed": "No",
             "documents": [],
+            "retry_count": 0,
         })
 
         return RAGResponse(

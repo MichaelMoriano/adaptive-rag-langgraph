@@ -21,8 +21,13 @@ def decide_to_generate(state: GraphState) -> str:
 
 
 def grade_generation(state: GraphState) -> str:
-    """Edge condicional: valida la respuesta (alucinaciones + utilidad)."""
+    """Edge condicional: valida la respuesta con límite de reintentos."""
     print("── Edge: GRADE GENERATION")
+
+    retry_count = state.get("retry_count", 0)
+    if retry_count >= 2:
+        print("   → Límite de reintentos alcanzado, forzando respuesta útil")
+        return "useful"
 
     hallucination_score = hallucination_grader_chain.invoke({
         "documents": state["documents"],

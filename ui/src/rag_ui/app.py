@@ -20,7 +20,7 @@ async def on_chat_start():
 
 @cl.on_message
 async def on_message(message: cl.Message):
-    async with cl.Step(name="Consultando al agente RAG...") as step:
+    async with cl.Step(name="Consulta al agente RAG...") as step:
         try:
             async with httpx.AsyncClient(timeout=60.0) as client:
                 response = await client.post(

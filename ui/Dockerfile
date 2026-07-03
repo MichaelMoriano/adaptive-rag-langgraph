@@ -5,7 +5,7 @@ WORKDIR /app
 RUN pip install uv
 
 COPY pyproject.toml .
-RUN uv pip install --system -e .
+RUN uv pip install --system chainlit httpx python-dotenv
 
 COPY src/ ./src/
 COPY chainlit.md .

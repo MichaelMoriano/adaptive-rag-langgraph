@@ -1,5 +1,5 @@
 from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from src.workflows.state import GraphState
 from src.workflows.chains import (
@@ -56,7 +56,8 @@ def generate(state: GraphState) -> GraphState:
         "question": state["question"],
         "context": context,
     })
-    return {"generation": generation}
+    retry_count = state.get("retry_count", 0) + 1
+    return {"generation": generation, "retry_count": retry_count}
 
 
 def transform_query(state: GraphState) -> GraphState:
