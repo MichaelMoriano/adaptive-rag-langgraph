@@ -1,0 +1,9 @@
+langchain
+langgraph
+langchain-openai
+langchain-google-genai
+langchain-community
+chromadb
+tavily-python
+tiktoken
+python-dotenv

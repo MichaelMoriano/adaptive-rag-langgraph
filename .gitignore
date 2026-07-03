@@ -1,0 +1,24 @@
+# Entorno virtual
+.venv/
+env/
+venv/
+
+# Variables de entorno
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# ChromaDB
+chroma_db/
+.chroma/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
